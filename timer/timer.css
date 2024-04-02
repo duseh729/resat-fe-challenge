@@ -1,0 +1,33 @@
+button {
+  background-color: transparent;
+}
+
+#timer-container {
+  padding: 20px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+#timer-display {
+  text-align: center;
+  padding: 33px;
+}
+#timer-display p {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+#button-container {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+#button-container button {
+  font-size: 18px;
+}
+
+.border {
+  border: black solid 2px;
+}
