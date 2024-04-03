@@ -1,0 +1,7 @@
+.active {
+  background-color: tomato;
+}
+
+#input-container button {
+  margin: 0 4px;
+}

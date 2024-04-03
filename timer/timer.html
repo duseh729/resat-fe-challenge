@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="timer.css" />
+    <link rel="stylesheet" href="../common.css" />
   </head>
   <body>
-    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 24px">
+    <div class="container" style="flex-direction: column; gap: 24px">
       <div><input type="number" id="hour-input" />시간 <input type="number" id="minute-input" />분 <input type="number" id="second-input" />초</div>
       <div id="timer-container" class="border">
         <div id="timer-display" class="border"><p>00:00:00</p></div>
-        <div id="button-container">
+        <div class="button-container">
           <button id="start-button" class="border"><span>START</span></button>
           <button id="stop-button" class="border"><span>STOP</span></button>
           <button id="reset-button" class="border"><span>RESET</span></button>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../common.css" />
+    <link rel="stylesheet" href="./todo.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1>TO-DO LIST</h1>
+      </div>
+
+      <div id="todo-state-container" class="button-container" style="margin-bottom: 12px">
+        <button class="active">전체</button><button>완료</button><button>미완료</button>
+      </div>
+
+      <div id="input-container">
+        <input type="text" placeholder="할 일을 작성주세요." /><button value="0">낮음</button><button value="1">보통</button><button value="2">높음</button
+        ><button value="3">아주 높음</button><button id="add-button" style="background-color: rgb(255, 146, 127); border-radius: 5px">추가</button>
+      </div>
+
+      <div id="todo-container" style="border: 1px solid black; margin-top: 12px; padding: 10px; width: 450px">
+        <!-- <div style="text-align: right">
+          <select name="" id="sort-input">
+            <option value="defalut">기본</option>
+            <option value="upDown">오름차순</option>
+            <option value="downUp">내림차순</option>
+          </select>
+        </div> -->
+      </div>
+    </div>
+    <script src="./todo.js"></script>
+  </body>
+</html>
