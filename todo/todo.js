@@ -85,6 +85,53 @@ addButton.addEventListener("click", () => {
 
   div.appendChild(button);
 
+  const updateButton = document.createElement("button");
+  updateButton.innerText = "수정";
+  updateButton.addEventListener("click", e => {
+    div.innerHTML = `
+    <div id="update-container">
+      <input type="text" placeholder="할 일을 작성주세요." /><button value="0">낮음</button><button value="1">보통</button><button value="2">높음</button
+      ><button value="3">아주 높음</button><button id="update-button2" style="background-color: rgb(255, 146, 127); border-radius: 5px">수정</button>
+    </div>`;
+    const updateButtons = document.querySelectorAll("#update-container button");
+    const updateButton2 = document.getElementById("update-button2");
+    const updateInput = document.querySelector("#update-container input");
+
+    updateButtons.forEach(item => {
+      if (item.id !== "add-button") {
+        item.addEventListener("click", e => {
+          updateButtons.forEach(item => item.classList.remove("active"));
+          e.target.classList.add("active");
+          difficulty = e.target.value;
+          console.log(difficulty);
+        });
+      }
+    });
+
+    updateButton2.addEventListener("click", () => {
+      div.innerHTML = "";
+      div.appendChild(checkbox);
+
+      const tempSpan = document.createElement("span");
+      tempSpan.innerText = updateInput.value;
+      todoInput.value = "";
+
+      div.appendChild(tempSpan);
+
+      const tempButton = document.createElement("button");
+      tempButton.innerText = difficultyList[Number(difficulty)];
+      tempButton.value = Number(difficulty);
+      difficulty = null;
+      difficultyButtons.forEach(item => item.classList.remove("active"));
+      div.appendChild(tempButton);
+
+      div.appendChild(updateButton);
+    });
+  });
+  updateButton.style = "background-color: rgb(255, 146, 127); border-radius: 5px";
+
+  div.appendChild(updateButton);
+
   todoContainer.appendChild(div);
 });
 
