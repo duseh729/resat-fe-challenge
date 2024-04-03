@@ -85,6 +85,7 @@ addButton.addEventListener("click", () => {
 
   div.appendChild(button);
 
+  // 리팩토링이 필요해 보인다
   const updateButton = document.createElement("button");
   updateButton.innerText = "수정";
   updateButton.addEventListener("click", e => {
