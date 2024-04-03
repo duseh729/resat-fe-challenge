@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="timer.css" />
   </head>
   <body>
-    <div style="display: flex; justify-content: center; align-items: center">
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 24px">
+      <div><input type="number" id="hour-input" />시간 <input type="number" id="minute-input" />분 <input type="number" id="second-input" />초</div>
       <div id="timer-container" class="border">
         <div id="timer-display" class="border"><p>00:00:00</p></div>
         <div id="button-container">
