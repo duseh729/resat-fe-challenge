@@ -1,0 +1,47 @@
+#calendar-header {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+#calendar-header button:active {
+  background-color: rgb(255, 148, 129);
+}
+
+#day-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 16px 0;
+  border-bottom: 1px solid gray;
+}
+#day-container div {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+#date-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
+}
+#date-container div {
+  font-size: 18px;
+}
+
+.day {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.memo {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 100px;
+  top: 100px;
+  /* background-color: yellow; */
+  /* z-index: 22; */
+}
