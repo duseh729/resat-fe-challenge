@@ -29,3 +29,5 @@ const prevEvent = () => {
 
 nextButton.addEventListener("click", nextEvent);
 prevButton.addEventListener("click", prevEvent);
+
+const autoSlide = setInterval(nextEvent, 2000);
