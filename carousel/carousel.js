@@ -8,7 +8,7 @@ const nextButton = document.querySelector("#next-button");
 const nextEvent = () => {
   console.log("다음");
   if (current !== CAROUSEL_LENGTH) {
-    carouselContainer.style.transform = `translateX(${(current + 1) * -370}px)`;
+    carouselContainer.style.transform = `translateX(${(current + 1) * -400}px)`;
     current++;
   } else {
     current = 0;
@@ -20,10 +20,10 @@ const prevEvent = () => {
   console.log("이전");
   if (current !== 0) {
     current--;
-    carouselContainer.style.transform = `translateX(${current * -370}px)`;
+    carouselContainer.style.transform = `translateX(${current * -400}px)`;
   } else {
     current = CAROUSEL_LENGTH;
-    carouselContainer.style.transform = `translateX(${CAROUSEL_LENGTH * -370}px)`;
+    carouselContainer.style.transform = `translateX(${CAROUSEL_LENGTH * -400}px)`;
   }
 };
 

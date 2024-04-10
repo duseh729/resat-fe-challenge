@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="clone.css" />
+    <link rel="stylesheet" href="../carousel/carousel.css" />
   </head>
   <body>
     <header>
@@ -155,22 +156,32 @@
           </div>
         </div>
         <div
-          style="
-            width: 400px;
-            height: 250px;
-            background-color: rgb(43, 234, 43);
-            border-radius: 10px;
-            position: relative;
-            top: -170px;
-            right: -100px;
-            color: white;
-            font-size: 24px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          "
+          style="width: 400px; height: 350px; border-radius: 20px; position: relative; top: -150px; right: -100px; color: white; font-size: 24px; display: flex"
         >
-          디스플레이 광고 이해하기
+          <div id="container">
+            <div id="carousel-container">
+              <div class="carousel-item">
+                <img src="../carousel/carousel1.jpg" alt="" />
+                <div>
+                  <p>첫번째 이미지</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../carousel/carousel2.jpg" alt="" />
+                <div>
+                  <p>두번째 이미지</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../carousel/carousel3.jpg" alt="" />
+                <div>
+                  <p>세번째 이미지</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="button-container"><button id="prev-button">◀️</button><button id="next-button">▶️</button></div>
+          </div>
         </div>
       </article>
 
@@ -463,5 +474,7 @@
       (주)오픈놀 | 대표이사 : 권인택 | 이메일 : help@miniintern.com | 문의 : 070-8221-3056 서울특별시 영등포구 양평로 2 주식회사 오픈놀 | 사업자등록번호 :
       110-81-99930 직업정보제공사업 : 서울서부 제2018-19호 | 통신판매업신고 : 제2021-서울영등포-2467호 | 유료직업소개사업등록번호 : 제2021-3180239-14-5-00015호
     </footer>
+
+    <script src="../carousel/carousel.js"></script>
   </body>
 </html>
