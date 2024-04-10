@@ -28,6 +28,12 @@
 }
 
 #button-container {
-  text-align: center;
-  margin-top: 24px;
+  position: absolute;
+  top: 115px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+#button-container button {
 }
