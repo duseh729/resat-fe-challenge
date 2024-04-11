@@ -1,0 +1,45 @@
+body,
+ul {
+  margin: 0;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  padding: none;
+}
+ul li {
+  list-style-type: none;
+  color: white;
+  padding: 14px 8px;
+}
+li:hover {
+  background-color: brown;
+}
+
+nav {
+  background-color: tomato;
+}
+
+.hide {
+  display: none;
+}
+
+.menu-trigger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.menu-trigger div {
+  width: 44px;
+  height: 4px;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 6px;
+}
+
+@media screen and (max-width: 768px) {
+  ul {
+    flex-direction: column;
+  }
+}
