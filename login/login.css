@@ -1,0 +1,28 @@
+body {
+  margin: 0px;
+}
+#login-form {
+  border: 1px solid tomato;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding: 25px;
+  border-radius: 15px;
+  gap: 18px;
+  margin: auto;
+}
+#login-form label {
+  display: block;
+}
+#login-form div {
+}
+button {
+  color: white;
+  border-radius: 10px;
+  background-color: tomato;
+  padding: 8px;
+  border: none;
+}
+button:active {
+  background-color: rgb(246, 183, 172);
+}
